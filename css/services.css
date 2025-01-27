@@ -1,0 +1,62 @@
+.services {
+    padding-block: 5rem;
+}
+
+.services .section-title {
+    font-size: 48px;
+}
+
+.services__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 1rem;
+}
+
+.services__item {
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-size: cover!important;
+    background-position: center!important;
+    color: #fff;
+}
+
+.services__title {
+    margin-top: auto;
+    font-size: 45px;
+    line-height: 53px;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.services__item ul {
+    color: #FFF;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.services__item.maintenance {
+    background: linear-gradient(to bottom, #0056 20%, #005), url(../img/maintenance.jpg);
+}
+
+.services__item.heating-gas {
+    background: linear-gradient(to bottom, #0056 20%, #005), url(../img/heating-gas.jpg);
+}
+
+.services__item.drainage-prevention {
+    background: linear-gradient(to bottom, #0056 20%, #005), url(../img/drainage-prevention.jpg);
+}
+
+.services__item.installation-repairs {
+    background: linear-gradient(to bottom, #0056 20%, #005), url(../img/installation-repairs.jpg);
+}
+
+.services__item.toilet {
+    background: linear-gradient(to bottom, #0056 20%, #005), url(../img/toilet.jpg);
+}
+
+.services__item.construction {
+    background: linear-gradient(to bottom, #0056 20%, #005), url(../img/construction.jpg);
+}

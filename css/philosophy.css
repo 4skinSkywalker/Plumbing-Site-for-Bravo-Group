@@ -1,0 +1,31 @@
+.philosophy {
+    display: flex;
+}
+
+.rect {
+    display: flex;
+    max-width: 1200px;
+    margin-left: auto;
+    background: #005;
+}
+
+.rect .content {
+    padding: 10rem 5rem;
+}
+
+.rect .section-title {
+    font-size: 50px;
+    color: #fff;
+}
+
+.rect .section-text {
+    font-size: 20px;
+    color: #fff;
+}
+
+.rect .image {
+    flex: 0 0 420px;
+    background: url(../img/philosophy.jpg);
+    background-position: center;
+    background-size: cover;
+}

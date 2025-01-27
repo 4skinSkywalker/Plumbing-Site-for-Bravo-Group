@@ -1,0 +1,92 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.header__info {
+    background: #005;
+    color: #bbf;
+    border-bottom: 1px solid #bbf4;
+}
+
+.header__info .container {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+}
+
+.header__phone-ico,
+.header__phone-num {
+    background: #2db;
+    color: #fff;
+    font-weight: 700;
+}
+
+.header__phone-ico {
+    margin-left: auto;
+    width: 3rem;
+    background: #0a7;
+}
+
+.header__phone-num {
+    padding-inline: 2rem;
+}
+
+.header__nav {
+    color: #fff;
+    transition: all 400ms ease;
+}
+
+.header__nav .container {
+    padding-block: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.header__nav-logo {
+    height: 112px;
+    transition: all 400ms ease;
+}
+
+.header__nav-link {
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.header__nav-link::after {
+    content: "";
+    width: 30px;
+    height: 6px;
+    background: #2db;
+    position: absolute;
+    bottom: -0.9rem;
+    right: 0rem;
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
+
+.header__nav-link:first-of-type {
+    margin-left: auto;
+}
+
+.header__nav-link.active::after,
+.header__nav-link:hover::after {
+    opacity: 1;
+}
+
+.header__nav.scrolled {
+    background: #005;
+}
+
+.header__nav.scrolled .header__nav-logo {
+    height: 64px;
+}
+
+.header__nav.scrolled .container {
+    padding-block: 1rem;
+}
