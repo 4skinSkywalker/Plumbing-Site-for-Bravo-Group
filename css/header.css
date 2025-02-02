@@ -2,12 +2,12 @@
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 99999;
 }
 
 .header__info {
-    background: #005;
+    background: #006;
     color: #bbf;
-    border-bottom: 1px solid #bbf4;
 }
 
 .header__info .container {
@@ -80,7 +80,7 @@
 }
 
 .header__nav.scrolled {
-    background: #005;
+    background: #007;
 }
 
 .header__nav.scrolled .header__nav-logo {

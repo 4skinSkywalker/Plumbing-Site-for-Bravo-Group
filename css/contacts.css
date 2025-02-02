@@ -1,0 +1,53 @@
+.contacts {
+    padding-block: 5rem;
+}
+
+.contacts .section-title {
+    font-size: 50px;
+}
+.contacts .section-text {
+    font-size: 20px;
+}
+
+.contacts-grid {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1.33fr 1fr;
+    gap: 2rem;
+}
+
+.contacts-map {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background-image: url(../img/sydney.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contacts-item {
+    display: flex;
+    align-items: center;
+    gap: 0.66rem;
+}
+
+.contacts-item i {
+    font-size: 1.66rem;
+}
+
+.contacts-item__details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.33rem;
+}
+
+.contacts-item__details >*:first-child {
+    font-weight: 700;
+    text-transform: uppercase;
+}

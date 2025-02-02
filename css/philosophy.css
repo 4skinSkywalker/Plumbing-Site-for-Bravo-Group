@@ -2,30 +2,11 @@
     display: flex;
 }
 
-.rect {
-    display: flex;
-    max-width: 1200px;
+.philosophy .rect {
     margin-left: auto;
-    background: #005;
+    grid-template-columns: 1.33fr 1fr;
 }
 
-.rect .content {
-    padding: 10rem 5rem;
-}
-
-.rect .section-title {
-    font-size: 50px;
-    color: #fff;
-}
-
-.rect .section-text {
-    font-size: 20px;
-    color: #fff;
-}
-
-.rect .image {
-    flex: 0 0 420px;
-    background: url(../img/philosophy.jpg);
-    background-position: center;
-    background-size: cover;
+.philosophy .rect .image {
+    background-image: url(../img/philosophy.jpg);
 }

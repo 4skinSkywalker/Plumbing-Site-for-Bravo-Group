@@ -38,25 +38,25 @@
 }
 
 .services__item.maintenance {
-    background: linear-gradient(to bottom, #0056 20%, #005), url(../img/maintenance.jpg);
+    background: linear-gradient(to bottom, #0066 20%, #006), url(../img/maintenance.jpg);
 }
 
 .services__item.heating-gas {
-    background: linear-gradient(to bottom, #0056 20%, #005), url(../img/heating-gas.jpg);
+    background: linear-gradient(to bottom, #0066 20%, #006), url(../img/heating-gas.jpg);
 }
 
 .services__item.drainage-prevention {
-    background: linear-gradient(to bottom, #0056 20%, #005), url(../img/drainage-prevention.jpg);
+    background: linear-gradient(to bottom, #0066 20%, #006), url(../img/drainage-prevention.jpg);
 }
 
 .services__item.installation-repairs {
-    background: linear-gradient(to bottom, #0056 20%, #005), url(../img/installation-repairs.jpg);
+    background: linear-gradient(to bottom, #0066 20%, #006), url(../img/installation-repairs.jpg);
 }
 
 .services__item.toilet {
-    background: linear-gradient(to bottom, #0056 20%, #005), url(../img/toilet.jpg);
+    background: linear-gradient(to bottom, #0066 20%, #006), url(../img/toilet.jpg);
 }
 
 .services__item.construction {
-    background: linear-gradient(to bottom, #0056 20%, #005), url(../img/construction.jpg);
+    background: linear-gradient(to bottom, #0066 20%, #006), url(../img/construction.jpg);
 }

@@ -38,6 +38,26 @@
     margin-bottom: 5rem;
 }
 
+.my-1 {
+    margin-block: 1rem;
+}
+
+.my-2 {
+    margin-block: 2rem;
+}
+
+.my-3 {
+    margin-block: 3rem;
+}
+
+.my-4 {
+    margin-block: 4rem;
+}
+
+.my-5 {
+    margin-block: 5rem;
+}
+
 .text-accent {
     color: #2db!important;
 }
