@@ -1,8 +1,0 @@
-.about {
-    padding-block: 5rem;
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 5rem;
-    color: #444;
-    border-bottom: 1px solid #5554;
-}
