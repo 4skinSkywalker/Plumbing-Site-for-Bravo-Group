@@ -18,4 +18,11 @@
         })
     );
 
+    const hammenuLinks = [...document.querySelectorAll(".hammenu-link")];
+    hammenuLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            hammenuLinks.forEach(link => link.classList.remove("active"));
+            link.classList.add("active");
+        });
+    });
 })();
