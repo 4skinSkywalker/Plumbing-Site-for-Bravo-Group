@@ -25,7 +25,7 @@
             link.classList.add("active");
             setTimeout(() => {
                 document.querySelector("#hammenu-check").checked = false;
-            }, 400);
+            }, 500);
         });
     });
 })();

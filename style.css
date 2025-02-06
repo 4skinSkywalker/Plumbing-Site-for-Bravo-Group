@@ -319,7 +319,7 @@ $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
 
 .header__nav {
     color: #fff;
-    transition: all 400ms ease;
+    transition: all 500ms ease;
 }
 
 .header__nav .container {
@@ -327,12 +327,12 @@ $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
     display: flex;
     align-items: center;
     gap: 3rem;
-    transition: all 400ms ease;
+    transition: all 500ms ease;
 }
 
 .header__nav-logo {
     height: 112px;
-    transition: all 400ms ease;
+    transition: all 500ms ease;
 }
 
 .header__nav-link {
@@ -352,7 +352,7 @@ $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
     bottom: -0.9rem;
     right: 0;
     opacity: 0;
-    transition: opacity 400ms ease;
+    transition: opacity 500ms ease;
 }
 
 .header__nav-link:first-of-type {
@@ -384,7 +384,7 @@ $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
     height: 100%;
     background: radial-gradient(circle at center, #0008, #005);
     color: #fff;
-    transition: all 400ms ease;
+    transition: all 500ms ease;
 }
 
 .hammenu-modal-close {
@@ -402,7 +402,7 @@ $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
     padding-left: 12px;
     text-transform: uppercase;
     border-left: 8px solid #0000;
-    transition: all 400ms ease;
+    transition: all 500ms ease;
 }
 
 .hammenu-link.active {
@@ -750,7 +750,7 @@ $$ |                    \$$$$$$  |
     display: grid;
     place-items: center;
     place-content: center;
-    transition: all 400ms ease;
+    transition: all 500ms ease;
     cursor: pointer;
 }
 
