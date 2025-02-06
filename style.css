@@ -957,7 +957,7 @@ $$ |     \$$$$$$  |\$$$$$$  | \$$$$  |\$$$$$$$\ $$ |
 */
 .footer {
     padding-block: 3rem;
-    background-image: linear-gradient(to bottom, #003b, #003b), url(./img/footer.jpg);
+    background-image: linear-gradient(to bottom, #003b, #003), url(./img/footer.jpg);
     background-size: cover;
     background-position: center;
     color: #fff;
