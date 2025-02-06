@@ -23,6 +23,9 @@
         link.addEventListener("click", () => {
             hammenuLinks.forEach(link => link.classList.remove("active"));
             link.classList.add("active");
+            setTimeout(() => {
+                document.querySelector("#hammenu-check").checked = false;
+            }, 400);
         });
     });
 })();

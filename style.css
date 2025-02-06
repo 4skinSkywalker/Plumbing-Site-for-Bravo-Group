@@ -691,7 +691,6 @@ $$ |                    \$$$$$$  |
 
 .projects-descr {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     gap: 10rem;
 }
@@ -777,6 +776,7 @@ $$ |                    \$$$$$$  |
     }
 
     .projects-descr {
+        flex-wrap: wrap;
         gap: 3rem;
     }
 
