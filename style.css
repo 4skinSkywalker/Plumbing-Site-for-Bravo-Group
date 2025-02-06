@@ -195,7 +195,7 @@ a {
     color: #fff;
     border: none;
     padding: 0;
-    display: flex;
+    display: inline-flex;
     font-size: 16px;
     white-space: nowrap;
     cursor: pointer;
@@ -431,6 +431,10 @@ $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
 }
 
 @media (max-width: 768px) {
+    .header__nav .container {
+        padding-block: 1.5rem;
+    }
+    
     .header__info .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -439,12 +443,17 @@ $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
         gap: 0.5rem;
     }
 
-    .header__phone {
-        height: 2rem;
+    .header__vat {
+        display: none;
     }
 
-    .header__nav-logo {
-        height: 64px;
+    .header__phone {
+        height: 2.5rem;;
+    }
+
+    .header__nav-logo,
+    .header__nav.scrolled .header__nav-logo {
+        height: 56px;
     }
 
     .header__nav-link {
@@ -502,15 +511,15 @@ $$ |  $$ |\$$$$$$$\ $$ |      \$$$$$$  |
 
 @media (max-width: 768px) {
     .hero__title1 {
-        font-size: 16px;
+        font-size: 24px;
     }
     
     .hero__title2 {
-        font-size: 56px;
+        font-size: 64px;
     }
     
     .hero__title3 {
-        font-size: 16px;
+        font-size: 24px;
     }
 }
 
