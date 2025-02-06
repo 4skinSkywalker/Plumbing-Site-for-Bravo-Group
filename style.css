@@ -191,7 +191,7 @@ a {
     height: 3rem;
     font-weight: 700;
     letter-spacing: 2px;
-    background: #2db;
+    background-color: #2db;
     color: #fff;
     border: none;
     padding: 0;
@@ -216,7 +216,7 @@ a {
 
 .btn-primary-icon {
     padding-inline: 1rem;
-    background: #0a7;
+    background-color: #0a7;
 }
 
 .section-title {
@@ -235,7 +235,7 @@ a {
 .rect {
     display: grid;
     max-width: 1200px;
-    background: #008;
+    background-color: #008;
 }
 
 .rect .content {
@@ -285,7 +285,7 @@ $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
 }
 
 .header__info {
-    background: #006;
+    background-color: #006;
     color: #bbf;
 }
 
@@ -302,7 +302,7 @@ $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
 
 .header__phone-ico,
 .header__phone-num {
-    background: #2db;
+    background-color: #2db;
     color: #fff;
     font-weight: 700;
 }
@@ -310,7 +310,7 @@ $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
 .header__phone-ico {
     margin-left: auto;
     width: 3rem;
-    background: #0a7;
+    background-color: #0a7;
 }
 
 .header__phone-num {
@@ -347,7 +347,7 @@ $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
     content: "";
     width: 30px;
     height: 6px;
-    background: #2db;
+    background-color: #2db;
     position: absolute;
     bottom: -0.9rem;
     right: 0;
@@ -419,7 +419,7 @@ $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
 }
 
 .header__nav.scrolled {
-    background: #007;
+    background-color: #007;
 }
 
 .header__nav.scrolled .header__nav-logo {
@@ -451,7 +451,10 @@ $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
         height: 2.5rem;;
     }
 
-    .header__nav-logo,
+    .header__nav-logo {
+        height: 64px;
+    }
+
     .header__nav.scrolled .header__nav-logo {
         height: 56px;
     }
@@ -573,6 +576,7 @@ $$$$$$$  |\$$$$$$$\ $$ |        \$  /   $$ |\$$$$$$$\ \$$$$$$$\ $$$$$$$  |
 }
 
 .services__item {
+    position: relative;
     height: 480px;
     display: flex;
     flex-direction: column;
@@ -595,6 +599,30 @@ $$$$$$$  |\$$$$$$$\ $$ |        \$  /   $$ |\$$$$$$$\ \$$$$$$$\ $$$$$$$  |
     color: #FFF;
     font-size: 16px;
     line-height: 1.75;
+}
+
+.services-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background-color: #008;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.services-details__descr {
+    font-size: 20px;
+    line-height: 1.75;
+}
+
+.services__item:not(:hover) .services-details {
+    opacity: 0;
 }
 
 .services__item.maintenance {
@@ -682,7 +710,7 @@ $$ |                    \$$$$$$  |
 \__|                     \______/
 */
 .projects {
-    background: #006;
+    background-color: #006;
     color: #fff;
     padding-block: 10rem;
     margin-block: -5rem;
@@ -755,7 +783,7 @@ $$ |                    \$$$$$$  |
     width: 100%;
     height: 100%;
     text-align: center;
-    background: #2db;
+    background-color: #2db;
     display: grid;
     place-items: center;
     place-content: center;
