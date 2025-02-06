@@ -134,7 +134,7 @@ $$ |  $$ |  $$ |$$\ $$ |$$ |
 }
 
 .text-accent {
-    color: #5dc!important;
+    color: #2db!important;
 }
 
 .supercenter {
@@ -191,7 +191,7 @@ a {
     height: 3rem;
     font-weight: 700;
     letter-spacing: 2px;
-    background: #5dc;
+    background: #2db;
     color: #fff;
     border: none;
     padding: 0;
@@ -216,7 +216,7 @@ a {
 
 .btn-primary-icon {
     padding-inline: 1rem;
-    background: #197;
+    background: #0a7;
 }
 
 .section-title {
@@ -235,7 +235,7 @@ a {
 .rect {
     display: grid;
     max-width: 1200px;
-    background: #005;
+    background: #008;
 }
 
 .rect .content {
@@ -285,7 +285,7 @@ $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
 }
 
 .header__info {
-    background: #003;
+    background: #006;
     color: #bbf;
 }
 
@@ -302,7 +302,7 @@ $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
 
 .header__phone-ico,
 .header__phone-num {
-    background: #5dc;
+    background: #2db;
     color: #fff;
     font-weight: 700;
 }
@@ -310,7 +310,7 @@ $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
 .header__phone-ico {
     margin-left: auto;
     width: 3rem;
-    background: #197;
+    background: #0a7;
 }
 
 .header__phone-num {
@@ -347,7 +347,7 @@ $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
     content: "";
     width: 30px;
     height: 6px;
-    background: #5dc;
+    background: #2db;
     position: absolute;
     bottom: -0.9rem;
     right: 0;
@@ -406,7 +406,7 @@ $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
 }
 
 .hammenu-link.active {
-    border-left: 8px solid #5dc;
+    border-left: 8px solid #2db;
 }
 
 #hammenu-check:checked + .hammenu-modal {
@@ -419,7 +419,7 @@ $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
 }
 
 .header__nav.scrolled {
-    background: #004;
+    background: #007;
 }
 
 .header__nav.scrolled .header__nav-logo {
@@ -467,7 +467,7 @@ $$ |  $$ |\$$$$$$$\ $$ |      \$$$$$$  |
 \__|  \__| \_______|\__|       \______/
 */
 .hero {
-    background: linear-gradient(to bottom, #0036 20%, #003), url(./img/van.jpg);
+    background: linear-gradient(to bottom, #0066 20%, #006), url(./img/van.jpg);
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -589,27 +589,27 @@ $$$$$$$  |\$$$$$$$\ $$ |        \$  /   $$ |\$$$$$$$\ \$$$$$$$\ $$$$$$$  |
 }
 
 .services__item.maintenance {
-    background: linear-gradient(to bottom, #0036 20%, #003), url(./img/maintenance.jpg);
+    background: linear-gradient(to bottom, #0066 20%, #006), url(./img/maintenance.jpg);
 }
 
 .services__item.heating-gas {
-    background: linear-gradient(to bottom, #0036 20%, #003), url(./img/heating-gas.jpg);
+    background: linear-gradient(to bottom, #0066 20%, #006), url(./img/heating-gas.jpg);
 }
 
 .services__item.drainage-prevention {
-    background: linear-gradient(to bottom, #0036 20%, #003), url(./img/drainage-prevention.jpg);
+    background: linear-gradient(to bottom, #0066 20%, #006), url(./img/drainage-prevention.jpg);
 }
 
 .services__item.installation-repairs {
-    background: linear-gradient(to bottom, #0036 20%, #003), url(./img/installation-repairs.jpg);
+    background: linear-gradient(to bottom, #0066 20%, #006), url(./img/installation-repairs.jpg);
 }
 
 .services__item.toilet {
-    background: linear-gradient(to bottom, #0036 20%, #003), url(./img/toilet.jpg);
+    background: linear-gradient(to bottom, #0066 20%, #006), url(./img/toilet.jpg);
 }
 
 .services__item.construction {
-    background: linear-gradient(to bottom, #0036 20%, #003), url(./img/construction.jpg);
+    background: linear-gradient(to bottom, #0066 20%, #006), url(./img/construction.jpg);
 }
 
 @media (max-width: 768px) {
@@ -673,7 +673,7 @@ $$ |                    \$$$$$$  |
 \__|                     \______/
 */
 .projects {
-    background: #003;
+    background: #006;
     color: #fff;
     padding-block: 10rem;
     margin-block: -5rem;
@@ -746,7 +746,7 @@ $$ |                    \$$$$$$  |
     width: 100%;
     height: 100%;
     text-align: center;
-    background: #5dc;
+    background: #2db;
     display: grid;
     place-items: center;
     place-content: center;
@@ -920,7 +920,7 @@ $$ |     \$$$$$$  |\$$$$$$  | \$$$$  |\$$$$$$$\ $$ |
 */
 .footer {
     padding-block: 3rem;
-    background-image: linear-gradient(to bottom, #003b, #003), url(./img/footer.jpg);
+    background-image: linear-gradient(to bottom, #003b, #003b), url(./img/footer.jpg);
     background-size: cover;
     background-position: center;
     color: #fff;
