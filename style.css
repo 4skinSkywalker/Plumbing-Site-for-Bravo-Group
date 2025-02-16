@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Generate titles with https://ascii.today/ */
+
 /*
                                          $$\     
                                          $$ |    
@@ -183,11 +185,47 @@ a {
     text-decoration: inherit;
 }
 
+form {
+    margin: 2rem auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form label {
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="time"],
+form input[type="file"],
+form select,
+form textarea {
+    min-height: 44px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
 #hero,
 #about,
 #services,
 #projects,
-#contacts {
+#contacts,
+#quote {
     scroll-margin-top: 100px;
 }
 
@@ -484,7 +522,7 @@ $$ |  $$ |\$$$$$$$\ $$ |      \$$$$$$  |
 \__|  \__| \_______|\__|       \______/
 */
 .hero {
-    background: linear-gradient(to bottom, #0066 20%, #006), url(./img/van.jpg);
+    background: linear-gradient(to bottom, #0066 20%, #006e), url(./img/van.jpg);
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -503,7 +541,7 @@ $$ |  $$ |\$$$$$$$\ $$ |      \$$$$$$  |
 }
 
 .hero h1 {
-    line-height: 1.16;
+    line-height: 1;
 }
 
 .hero__title1 {
@@ -953,6 +991,53 @@ $$ |      $$ |  $$ |$$ |  $$ | $$ |$$\ $$  __$$ |$$ |        $$ |$$\  \____$$\
 }
 
 /*
+                               $$\               
+                               $$ |              
+ $$$$$$\  $$\   $$\  $$$$$$\ $$$$$$\    $$$$$$\  
+$$  __$$\ $$ |  $$ |$$  __$$\\_$$  _|  $$  __$$\ 
+$$ /  $$ |$$ |  $$ |$$ /  $$ | $$ |    $$$$$$$$ |
+$$ |  $$ |$$ |  $$ |$$ |  $$ | $$ |$$\ $$   ____|
+\$$$$$$$ |\$$$$$$  |\$$$$$$  | \$$$$  |\$$$$$$$\ 
+ \____$$ | \______/  \______/   \____/  \_______|
+      $$ |                                       
+      $$ |                                       
+      \__|
+*/
+
+.quote {
+    padding-block: 5rem;
+}
+
+.quote .section-title {
+    font-size: 50px;
+}
+
+.quote .section-text {
+    font-size: 20px;
+}
+
+.quote-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 1rem;
+}
+
+.quote-grid button[type="submit"] {
+    align-self: end;
+    justify-self: end;
+    margin-bottom: 0.25rem;
+}
+
+@media (max-width: 768px) {
+    .quote-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/*
  $$$$$$\                      $$\                         
 $$  __$$\                     $$ |                        
 $$ /  \__|$$$$$$\   $$$$$$\ $$$$$$\    $$$$$$\   $$$$$$\  
@@ -987,7 +1072,7 @@ $$ |     \$$$$$$  |\$$$$$$  | \$$$$  |\$$$$$$$\ $$ |
 
 .footer__socials a {
     border: 1px solid;
-    padding: 0.5rem;
+    padding: 0.5rem 0.75rem;
 }
 
 .footer-section__title {

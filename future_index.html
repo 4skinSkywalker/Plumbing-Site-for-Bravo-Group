@@ -17,18 +17,18 @@
         <div class="header__info">
             <div class="container">
                 <div class="supercenter header__vat">Bravo Plumbing Group Pty Ltd</div>
-                <a class="header__phone" href="tel:555555555">
+                <a class="header__phone" href="#quote">
                     <div class="supercenter header__phone-ico">
-                        <i class="bi bi-telephone-fill"></i>
+                        <i class="bi bi-chat-quote"></i>
                     </div>
-                    <div class="supercenter header__phone-num">555-555-555</div>
+                    <div class="supercenter header__phone-num">Request a Quote</div>
                 </a>
             </div>
         </div>
 
         <div class="header__nav">
             <div class="container">
-                <img class="header__nav-logo" src="img/bravo-logo-inverted.png" alt="Bravo Plumbing Group official logo">
+                <img class="header__nav-logo" src="img/bravo-logo_white.png" alt="Bravo Plumbing Group official logo">
                 <div class="header__nav-link active">
                     <a href="#hero">Home</a>
                 </div>
@@ -227,7 +227,7 @@
         </div>
     </div>
 
-    <div class="team" id="team">
+    <div class="team hidden" id="team">
         <div class="rect">
             <div class="image"></div>
             <div class="content">
@@ -257,25 +257,25 @@
                             <div>Open 24 hours, 7 days per week</div>
                         </div>
                     </div>
-                    <a class="contacts-item" href="tel:555555555">
+                    <a class="contacts-item" href="tel:1800533600">
                         <div><i class="bi bi-telephone-fill"></i></div>
                         <div class="contacts-item__details">
                             <div>Phone</div>
-                            <div>555-555-555</div>
+                            <div>1800-533-600</div>
                         </div>
                     </a>
-                    <a class="contacts-item" href="mailto:bravo@plumber.com">
+                    <a class="contacts-item" href="mailto:admin@bravoplumbing.com.au">
                         <div><i class="bi bi-envelope-fill"></i></div>
                         <div class="contacts-item__details">
                             <div>Email</div>
-                            <div>bravo@plumber.com</div>
+                            <div>admin@bravoplumbing.com.au</div>
                         </div>
                     </a>
-                    <a class="contacts-item" href="https://www.google.com/maps/search/?api=1&query=1984+Square+Ave,+Sydney,+AB+CDE+123" target="_blank">
+                    <a class="contacts-item hidden" href="https://www.google.com/maps/search/?api=1&query=1984+Square+Ave,+Sydney,+AB+CDE+123" target="_blank">
                         <div><i class="bi bi-geo-alt-fill"></i></div>
                         <div class="contacts-item__details">
                             <div>Address</div>
-                            <div>1984 Square Ave, Sydney, AB CDE 123</div>
+                            <div>-not specified-</div>
                         </div>
                     </a>
                 </div>
@@ -283,11 +283,72 @@
         </div>
     </div>
 
+    <div class="quote container" id="quote">
+        <div class="section-title mb-2">Request a <span class="text-accent">Quote</span></div>
+        <div class="section-text">Please fill out the form below to get a quick and accurate quote for your plumbing needs. Our team will get back to you as soon as possible.</div>
+        
+        <!-- Get a Quote Form for Plumbing Services -->
+        <form action="https://formspree.io/f/mwpvrdbl" method="POST" enctype="multipart/form-data">
+            <div class="quote-grid">
+                <div>
+                    <!-- Full Name -->
+                    <label for="full_name">Full Name:</label>
+                    <input type="text" id="full_name" name="full_name" required>
+                </div>
+
+                <div>
+                    <!-- Preferred Date -->
+                    <label for="preferred_date">Preferred Date (optional):</label>
+                    <input type="date" id="preferred_date" name="preferred_date">
+                </div>
+    
+                <div>
+                    <!-- Email or Phone -->
+                    <label for="emailOrPhone">Email or Phone:</label>
+                    <input type="text" id="emailOrPhone" name="emailOrPhone" required>
+                </div>
+
+                <div>
+                    <!-- Preferred Time -->
+                    <label for="preferred_time">Preferred Time (optional):</label>
+                    <input type="time" id="preferred_time" name="preferred_time">
+                </div>
+    
+                <div>
+                    <!-- Service Address -->
+                    <label for="service_address">Service Address:</label>
+                    <input type="text" id="service_address" name="service_address" required>
+                </div>
+
+                <div>
+                    <!-- Upload Photos (Optional) -->
+                    <label for="photo">Upload Photos (optional):</label>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                </div>
+    
+                <div>
+                    <!-- Description of the Issue or Service Required -->
+                    <label for="description">Description of Issue or Service Required:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button class="btn-primary" type="submit">
+                    <div class="supercenter btn-primary-label">Send Request</div>
+                    <div class="supercenter btn-primary-icon">
+                        <i class="bi bi-send"></i>
+                    </div>
+                </button>
+            </div>
+        </form>
+        
+        </div>
+
     <div class="footer">
         <div class="container">
             <div class="footer-top">
                 <div class="footer-section">
-                    <img class="footer__logo" src="img/bravo-logo-inverted.png" alt="Bravo Plumbing Group official logo">
+                    <img class="footer__logo" src="img/bravo-logo_white.png" alt="Bravo Plumbing Group official logo">
                     <div class="footer__socials">
                         <a href="#"><i class="bi bi-facebook"></i></a>
                         <a href="#"><i class="bi bi-linkedin"></i></a>
