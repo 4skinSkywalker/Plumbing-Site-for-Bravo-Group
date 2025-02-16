@@ -1,4 +1,24 @@
 (async function () {
+    document.addEventListener("DOMContentLoaded", function() {
+        if (window.location.search.indexOf("successmail") !== -1) {
+            document.getElementById('successModal').classList.add('active');
+            
+            const quoteSection = document.getElementById('quote');
+            if (quoteSection) {
+                quoteSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        
+        document.getElementById('modalClose').addEventListener('click', function() {
+            document.getElementById('successModal').classList.remove('active');
+        });
+        
+        document.getElementById('successModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('active');
+            }
+        });
+    });
 
     const nav = document.querySelector(".header__nav");
     const navLinks = [...document.querySelectorAll(".header__nav-link")];
