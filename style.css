@@ -499,6 +499,7 @@ $$ |  $$ |\$$$$$$$\ $$ |      \$$$$$$  |
     grid-template-rows: 1fr auto;
     padding-block: 3rem;
     height: calc(100svh - 3em);
+    max-height: 768px;
 }
 
 .hero h1 {
@@ -717,8 +718,9 @@ $$ |                    \$$$$$$  |
 .projects {
     background-color: #006;
     color: #fff;
-    padding-block: 10rem;
-    margin-block: -5rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    margin-top: -5rem;
 }
 
 .projects .section-title {
