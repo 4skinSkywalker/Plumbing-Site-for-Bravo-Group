@@ -78,6 +78,7 @@ $$ |  $$ |  $$ |$$\ $$ |$$ |
 .hidden {
     opacity: 0 !important;
     height: 0 !important;
+    pointer-events: none;
 }
 
 .mt-1 {
