@@ -8,24 +8,378 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-        body {
-            margin: 0;
-            background: #333;
-            color: #fff;
-            display: grid;
-            place-items: center;
-            font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            height: 100svh;
-        }
-        h1 {
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
-    <h1>Work in Progress</h1>
+    <div class="header" id="header">
+        <div class="header__info">
+            <div class="container">
+                <div class="supercenter header__vat">Bravo Plumbing Group Pty Ltd</div>
+                <a class="header__phone" href="#quote">
+                    <div class="supercenter header__phone-ico">
+                        <i class="bi bi-chat-quote"></i>
+                    </div>
+                    <div class="supercenter header__phone-num">Request a Quote</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="header__nav">
+            <div class="container">
+                <img class="header__nav-logo" src="img/bravo-logo_white.png" alt="Bravo Plumbing Group official logo">
+                <div class="header__nav-link active">
+                    <a href="#hero">Home</a>
+                </div>
+                <div class="header__nav-link">
+                    <a href="#about">About</a>
+                </div>
+                <div class="header__nav-link">
+                    <a href="#services">Services</a>
+                </div>
+                <div class="header__nav-link">
+                    <a href="#projects">Projects</a>
+                </div>
+                <div class="header__nav-link">
+                    <a href="#contacts">Contacts</a>
+                </div>
+                <label class="hammenu" for="hammenu-check"><i class="bi bi-list"></i></label>
+                <input id="hammenu-check" type="checkbox" hidden>
+                <div class="hammenu-modal">
+                    <label class="hammenu-modal-close" for="hammenu-check"><i class="bi bi-x-lg"></i></label>
+                    <a href="#hero" class="hammenu-link">
+                        Home
+                    </a>
+                    <a href="#about" class="hammenu-link">
+                        About
+                    </a>
+                    <a href="#services" class="hammenu-link">
+                        Services
+                    </a>
+                    <a href="#projects" class="hammenu-link">
+                        Projects
+                    </a>
+                    <a href="#contacts" class="hammenu-link">
+                        Contacts
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero" id="hero">
+        <div class="container">
+            <h1>
+                <div class="hero__title1">Residential & Commercial</div>
+                <div class="hero__title2">PLUMBING</div>
+                <div class="hero__title3 hidden">Systems in Sydney/NSW</div>
+            </h1>
+            <a href="#contacts" class="btn-primary mt-3">
+                <div class="supercenter btn-primary-label">Contact us</div>
+                <div class="supercenter btn-primary-icon">
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="about container" id="about">
+        <div class="section-title">Welcome to <span class="text-accent">Bravo Plumbing Group</span> your trusted plumbing partners in Sydney/NSW.</div>
+        <div class="section-text">With over 15 years of experience in construction and maintenance plumbing, we provide top-notch services for all your plumbing needs—from minor leaks to emergency repairs and system upgrades. Our expert team is ready to assist homeowners and businesses.</div>
+    </div>
+
+    <div class="services container" id="services">
+        <div class="section-title mb-2"><span class="text-accent">Plumbing</span> Services</div>
+        <div class="section-text">We provide a wide range of services, including installations, repairs, inspections, and routine maintenance.</div>
+        <div class="services__list mt-5">
+            <div class="services__item maintenance">
+                <div class="services__title">Maintenance</div>
+                <ul>
+                    <li>Domestic and commercial plumbing maintenance</li>
+                    <li>Leak detection</li>
+                    <li>CCTV camera inspections</li>
+                </ul>
+
+                <div class="services-details">
+                    <div class="services-details__descr">Our Maintenance service cover both domestic and commercial plumbing systems, ensuring they remain efficient and reliable. We specialize in leak detection and conduct thorough CCTV camera inspections to identify and resolve issues quickly.</div>
+                </div>
+            </div>
+            <div class="services__item heating-gas">
+                <div class="services__title">Heating & Gas</div>
+                <ul>
+                    <li>Hot water heater service, repair, and installation</li>
+                    <li>Gas services</li>
+                    <li>Thermostatic mixing valve inspection and testing</li>
+                </ul>
+
+                <div class="services-details">
+                    <div class="services-details__descr">Our Heating & Gas service offer comprehensive solutions including hot water heater repair, service, and installation alongside reliable gas services. Additionally, our expert team conducts thorough inspections and testing of thermostatic mixing valves to ensure safety and optimal performance.</div>
+                </div>
+            </div>
+            <div class="services__item drainage-prevention">
+                <div class="services__title">Drainage & Prevention</div>
+                <ul>
+                    <li>Blocked drains</li>
+                    <li>Backflow prevention testing and certification</li>
+                </ul>
+
+                <div class="services-details">
+                    <div class="services-details__descr">Our Drainage & Prevention service address blocked drains and include backflow prevention testing and certification to ensure your plumbing system functions safely. These measures protect your property from water damage while maintaining optimal water quality.</div>
+                </div>
+            </div>
+            <div class="services__item installation-repairs">
+                <div class="services__title">Installation & Repairs</div>
+                <ul>
+                    <li>Tap servicing and repair</li>
+                    <li>Tapware and fixtures installation</li>
+                </ul>
+
+                <div class="services-details">
+                    <div class="services-details__descr">Our Installation & Repairs service provides expert tap servicing and repair to ensure optimal water flow and leak prevention. We also specialize in the precise installation of tapware and fixtures, delivering reliable performance and a polished finish.</div>
+                </div>
+            </div>
+            <div class="services__item toilet">
+                <div class="services__title">Toilet Services</div>
+                <ul>
+                    <li>Toilet installation and repairs</li>
+                </ul>
+
+                <div class="services-details">
+                    <div class="services-details__descr">Our Toilet service provide professional installation and efficient repairs to ensure your facilities function optimally. Our skilled team adheres to modern standards, delivering reliable and lasting solutions tailored to your needs.</div>
+                </div>
+            </div>
+            <div class="services__item construction">
+                <div class="services__title">Construction Plumbing</div>
+                <ul>
+                    <li>Residential and commercial new construction</li>
+                </ul>
+
+                <div class="services-details">
+                    <div class="services-details__descr">Construction plumbing refers to the design, installation, and testing of water supply and waste disposal systems in new buildings. This service covers both residential and commercial projects, ensuring that all plumbing systems comply with modern building codes and operate efficiently.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="philosophy">
+        <div class="rect">
+            <div class="content">
+                <div class="section-title mb-2">Trusted <span class="text-accent">Craftsmanship</span></div>
+                <div class="section-text">Our mission is to deliver reliable, top-quality plumbing solutions. With a commitment to integrity and customer satisfaction, we pride ourselves on providing prompt, professional, and affordable services. We ensure the highest standards of safety and craftsmanship in every job we undertake.</div>
+                <a href="#contacts" class="btn-primary mt-3">
+                    <div class="supercenter btn-primary-label">Contact Us</div>
+                    <div class="supercenter btn-primary-icon">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="image"></div>
+        </div>
+    </div>
+
+    <div class="projects" id="projects">
+        <div class="container">
+            <div class="section-title mb-2"><span class="text-accent">Featured</span> Projects</div>
+            <div class="projects-descr">
+                <div class="section-text">From residential to commercial installations, we blend modern techniques with expert craftsmanship to deliver innovative, high-quality solutions.</div>
+                <a href="#contacts" class="btn-primary">
+                    <div class="supercenter btn-primary-label">Contact Us</div>
+                    <div class="supercenter btn-primary-icon">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="projects-grid mt-5">
+                <div class="project-item project-1">
+                    <div class="project-title">Project 1</div>
+                    <div class="project-details">
+                        <div class="project-details__title mb-2">Project 1</div>
+                        <div class="project-details__loc"><b>Location:</b> Project 1 location</div>
+                        <div class="project-details__descr"><b>Description:</b> Project 1 description</div>
+                    </div>
+                </div>
+                <div class="project-item project-2">
+                    <div class="project-title">Project 2</div>
+                    <div class="project-details">
+                        <div class="project-details__title mb-2">Project 2</div>
+                        <div class="project-details__loc"><b>Location:</b> Project 2 location</div>
+                        <div class="project-details__descr"><b>Description:</b> Project 2 description</div>
+                    </div>
+                </div>
+                <div class="project-item project-3">
+                    <div class="project-title">Project 3</div>
+                    <div class="project-details">
+                        <div class="project-details__title mb-2">Project 3</div>
+                        <div class="project-details__loc"><b>Location:</b> Project 3 location</div>
+                        <div class="project-details__descr"><b>Description:</b> Project 3 description</div>
+                    </div>
+                </div>
+                <div class="project-item project-4">
+                    <div class="project-title">Project 4</div>
+                    <div class="project-details">
+                        <div class="project-details__title mb-2">Project 4</div>
+                        <div class="project-details__loc"><b>Location:</b> Project 4 location</div>
+                        <div class="project-details__descr"><b>Description:</b> Project 4 description</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team hidden" id="team">
+        <div class="rect">
+            <div class="image"></div>
+            <div class="content">
+                <div class="section-title mb-2"><span class="text-accent">Know</span> Our Team</div>
+                <div class="section-text">Meet our dedicated professionals: Innovative, skilled, and passionate. Committed to quality and excellence.</div>
+                <a href="#contacts" class="btn-primary mt-3">
+                    <div class="supercenter btn-primary-label">Contact Us</div>
+                    <div class="supercenter btn-primary-icon">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contacts" id="contacts">
+        <div class="container">
+            <div class="section-title mb-2"><span class="text-accent">Contact</span> Us</div>
+            <div class="section-text">We're committed to providing exceptional service and support, covering the entire Sydney/NSW metropolitan area, from Bondi to Penrith.</div>
+            <div class="contacts-grid mt-3">
+                <div class="contacts-map"></div>
+                <div class="contacts-list">
+                    <div class="contacts-item">
+                        <div><i class="bi bi-clock-fill"></i></div>
+                        <div class="contacts-item__details">
+                            <div>Time</div>
+                            <div>Open 24 hours, 7 days per week</div>
+                        </div>
+                    </div>
+                    <a class="contacts-item" href="tel:1800533600">
+                        <div><i class="bi bi-telephone-fill"></i></div>
+                        <div class="contacts-item__details">
+                            <div>Phone</div>
+                            <div>1800-533-600</div>
+                        </div>
+                    </a>
+                    <a class="contacts-item" href="mailto:admin@bravoplumbing.com.au">
+                        <div><i class="bi bi-envelope-fill"></i></div>
+                        <div class="contacts-item__details">
+                            <div>Email</div>
+                            <div>admin@bravoplumbing.com.au</div>
+                        </div>
+                    </a>
+                    <a class="contacts-item hidden" href="https://www.google.com/maps/search/?api=1&query=1984+Square+Ave,+Sydney,+AB+CDE+123" target="_blank">
+                        <div><i class="bi bi-geo-alt-fill"></i></div>
+                        <div class="contacts-item__details">
+                            <div>Address</div>
+                            <div>-not specified-</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="quote container" id="quote">
+        <div class="section-title mb-2">Request a <span class="text-accent">Quote</span></div>
+        <div class="section-text">Please fill out the form below to get a quick and accurate quote for your plumbing needs. Our team will get back to you as soon as possible.</div>
+        
+        <!-- Get a Quote Form for Plumbing Services -->
+        <form action="https://formspree.io/f/mwpvrdbl" method="POST" enctype="multipart/form-data">
+            <div class="quote-grid">
+                <div>
+                    <!-- Full Name -->
+                    <label for="full_name">Full Name:</label>
+                    <input type="text" id="full_name" name="full_name" required>
+                </div>
+
+                <div>
+                    <!-- Preferred Date -->
+                    <label for="preferred_date">Preferred Date (optional):</label>
+                    <input type="date" id="preferred_date" name="preferred_date">
+                </div>
+    
+                <div>
+                    <!-- Email or Phone -->
+                    <label for="emailOrPhone">Email or Phone:</label>
+                    <input type="text" id="emailOrPhone" name="emailOrPhone" required>
+                </div>
+
+                <div>
+                    <!-- Preferred Time -->
+                    <label for="preferred_time">Preferred Time (optional):</label>
+                    <input type="time" id="preferred_time" name="preferred_time">
+                </div>
+    
+                <div>
+                    <!-- Service Address -->
+                    <label for="service_address">Service Address:</label>
+                    <input type="text" id="service_address" name="service_address" required>
+                </div>
+
+                <div>
+                    <!-- Upload Photos (Optional) -->
+                    <label for="photo">Upload Photos (optional):</label>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                </div>
+    
+                <div>
+                    <!-- Description of the Issue or Service Required -->
+                    <label for="description">Description of Issue or Service Required:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button class="btn-primary" type="submit">
+                    <div class="supercenter btn-primary-label">Send Request</div>
+                    <div class="supercenter btn-primary-icon">
+                        <i class="bi bi-send"></i>
+                    </div>
+                </button>
+            </div>
+        </form>
+        
+        </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-section">
+                    <img class="footer__logo" src="img/bravo-logo_white.png" alt="Bravo Plumbing Group official logo">
+                    <div class="footer__socials">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <div class="footer-section__title text-accent">Links</div>
+                    <div class="footer__links">
+                        <a href="#hero">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contacts">Contacts</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <div class="footer-section__title text-accent">Resources</div>
+                    <div class="footer__links">
+                        <a href="#">Government</a>
+                        <a href="#">Local Regulations</a>
+                        <a href="#">Maintenance Checklists</a>
+                        <a href="#">Emergency Plumbing Advice</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© Copyright 2025 Bravo Plumbing Group. All Rights Reserved.</div>
+                <div>Web Design by Fredo Corleone</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
