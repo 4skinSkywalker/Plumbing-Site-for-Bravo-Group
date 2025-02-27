@@ -791,6 +791,7 @@ $$ |                                                      $$ |                \$
 */
 .philosophy {
     display: flex;
+    max-width: 1920px;
 }
 
 .philosophy .rect {
@@ -966,6 +967,7 @@ $$$$$$\    $$$$$$\   $$$$$$\  $$$$$$\$$$$\
 */
 .team {
     display: flex;
+    max-width: 1920px;
 }
 
 .team .rect {
