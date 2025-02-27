@@ -81,6 +81,10 @@ $$ |  $$ |  $$ |$$\ $$ |$$ |
     pointer-events: none;
 }
 
+.shadow {
+    box-shadow: 0 20px 50px 10px #0003;
+}
+
 .mt-1 {
     margin-top: 1rem;
 }
@@ -609,8 +613,7 @@ $$ |  $$ |\$$$$$$$\ $$ |      \$$$$$$  |
     justify-items: start;
     grid-template-rows: 1fr auto;
     padding-block: 3rem;
-    height: calc(100svh - 3em);
-    max-height: 768px;
+    height: calc(85svh - 3em);
 }
 
 .hero h1 {
@@ -641,6 +644,12 @@ $$ |  $$ |\$$$$$$$\ $$ |      \$$$$$$  |
     .hero__title3 {
         font-size: 24px;
     }
+}
+
+@media (min-height: 1200px) {
+    .hero .container {
+        height: calc(70svh - 3em);
+    } 
 }
 
 /*
@@ -790,6 +799,7 @@ $$ |                                                      $$ |                \$
 \__|                                                      \__|                 \______/
 */
 .philosophy {
+    margin: 0 auto;
     display: flex;
     max-width: 1920px;
 }
@@ -966,6 +976,7 @@ $$$$$$\    $$$$$$\   $$$$$$\  $$$$$$\$$$$\
    \____/  \_______| \_______|\__| \__| \__|
 */
 .team {
+    margin: 0 auto;
     display: flex;
     max-width: 1920px;
 }
