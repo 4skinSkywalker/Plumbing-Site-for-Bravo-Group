@@ -66,6 +66,26 @@ table {
 }
 
 /*
+                    $$\                          $$\     $$\                               
+                    \__|                         $$ |    \__|                              
+ $$$$$$\  $$$$$$$\  $$\ $$$$$$\$$$$\   $$$$$$\ $$$$$$\   $$\  $$$$$$\  $$$$$$$\   $$$$$$$\ 
+ \____$$\ $$  __$$\ $$ |$$  _$$  _$$\  \____$$\\_$$  _|  $$ |$$  __$$\ $$  __$$\ $$  _____|
+ $$$$$$$ |$$ |  $$ |$$ |$$ / $$ / $$ | $$$$$$$ | $$ |    $$ |$$ /  $$ |$$ |  $$ |\$$$$$$\  
+$$  __$$ |$$ |  $$ |$$ |$$ | $$ | $$ |$$  __$$ | $$ |$$\ $$ |$$ |  $$ |$$ |  $$ | \____$$\ 
+\$$$$$$$ |$$ |  $$ |$$ |$$ | $$ | $$ |\$$$$$$$ | \$$$$  |$$ |\$$$$$$  |$$ |  $$ |$$$$$$$  |
+ \_______|\__|  \__|\__|\__| \__| \__| \_______|  \____/ \__| \______/ \__|  \__|\_______/
+*/
+
+@keyframes bob {
+    0%, 100% {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: 20px;
+    }
+}
+
+/*
             $$\     $$\ $$\ 
             $$ |    \__|$$ |
 $$\   $$\ $$$$$$\   $$\ $$ |
@@ -613,7 +633,22 @@ $$ |  $$ |\$$$$$$$\ $$ |      \$$$$$$  |
     justify-items: start;
     grid-template-rows: 1fr auto;
     padding-block: 3rem;
-    height: calc(85svh - 3em);
+    height: calc(100svh - 3em);
+}
+
+.hero__text-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__button-arrow {
+    all: unset;
+    padding: 2rem;
+    font-size: min(7rem, 10vw);
+    cursor: pointer;
+    animation: bob 2s linear infinite;
 }
 
 .hero h1 {
@@ -633,6 +668,10 @@ $$ |  $$ |\$$$$$$$\ $$ |      \$$$$$$  |
 }
 
 @media (max-width: 768px) {
+    .hero__button-arrow {
+        display: none;
+    }
+
     .hero__title1 {
         font-size: 24px;
     }
